@@ -1,4 +1,4 @@
-import { Flame, CalendarClock, BookOpen, TrendingUp, Sparkles, Home, Book, ClipboardList, Star } from 'lucide-react'
+import { Flame, CalendarClock, BookOpen, TrendingUp, Sparkles } from 'lucide-react'
 
 export default function App() {
   return (
@@ -13,12 +13,8 @@ export default function App() {
             <p className="text-violet-400 text-sm mt-1 font-medium">NATURAL SCIENCE STREAM</p>
           </div>
           <div className="flex gap-2">
-            <div className="w-10 h-10 bg-yellow-500/10 rounded-full flex items-center justify-center">
-              🏆
-            </div>
-            <div className="w-10 h-10 bg-sky-500/10 rounded-full flex items-center justify-center">
-              ✨
-            </div>
+            <div className="w-10 h-10 bg-yellow-500/10 rounded-full flex items-center justify-center text-xl">🏆</div>
+            <div className="w-10 h-10 bg-sky-500/10 rounded-full flex items-center justify-center text-xl">✨</div>
           </div>
         </div>
 
@@ -37,31 +33,38 @@ export default function App() {
             </div>
             <Flame className="w-12 h-12 text-orange-500" />
           </div>
-          <div className="flex gap-1 mt-6">
-            {Array.from({ length: 7 }).map((_, i) => (
-              <div key={i} className="h-10 w-4 bg-gradient-to-t from-orange-500 to-violet-400 rounded-full" />
-            ))}
-          </div>
           <p className="text-sm text-zinc-400 mt-4">Keep the fire burning — 30 min today.</p>
         </div>
 
         {/* Countdown */}
         <div className="bg-zinc-900 rounded-3xl p-6 mb-8">
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-teal-500/10 rounded-2xl flex items-center justify-center">
-              <CalendarClock className="w-7 h-7 text-teal-400" />
-            </div>
+            <CalendarClock className="w-9 h-9 text-teal-400" />
             <div>
               <p className="text-sm text-zinc-400">NATIONAL EXAM COUNTDOWN</p>
               <p className="text-5xl font-bold mt-1">135 <span className="text-2xl text-zinc-400">days left</span></p>
             </div>
           </div>
-          <div className="h-2 bg-zinc-800 rounded-full mt-6 overflow-hidden">
-            <div className="h-2 w-[65%] bg-gradient-to-r from-violet-500 to-teal-400 rounded-full" />
-          </div>
         </div>
 
         {/* Continue */}
+        <p className="text-zinc-400 text-sm mb-4">Continue</p>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="bg-zinc-900 rounded-3xl p-6">
+            <BookOpen className="w-8 h-8 text-violet-400 mb-4" />
+            <p className="font-semibold">Resume Grade 12</p>
+            <p className="text-sm text-zinc-400 mt-1">Functions · Unit 3</p>
+          </div>
+          <div className="bg-zinc-900 rounded-3xl p-6">
+            <TrendingUp className="w-8 h-8 text-emerald-400 mb-4" />
+            <p className="font-semibold">Weak Topics</p>
+            <p className="text-sm text-zinc-400 mt-1">3 to review</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}        {/* Continue */}
         <p className="text-zinc-400 text-sm mb-4">Continue</p>
         <div className="grid grid-cols-2 gap-4">
           <div className="bg-zinc-900 rounded-3xl p-6">
