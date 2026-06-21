@@ -1,3 +1,4 @@
+import React from 'react'
 import { Flame, CalendarClock, BookOpen, TrendingUp, Sparkles } from 'lucide-react'
 
 export default function App() {
@@ -59,9 +60,7 @@ export default function App() {
       </div>
     </div>
   )
-}          <div className="flex items-center gap-4">
-            <CalendarClock className="w-9 h-9 text-teal-400" />
-            <div>
+}            <div>
               <p className="text-sm text-zinc-400">NATIONAL EXAM COUNTDOWN</p>
               <p className="text-5xl font-bold mt-1">135 <span className="text-2xl text-zinc-400">days left</span></p>
             </div>
