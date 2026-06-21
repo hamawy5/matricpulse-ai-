@@ -5,7 +5,6 @@ export default function App() {
     <div className="min-h-screen bg-zinc-950 text-white pb-20">
       <div className="max-w-md mx-auto px-5 pt-8">
         
-        {/* Header */}
         <div className="flex justify-between items-start mb-8">
           <div>
             <p className="text-sm text-zinc-400 tracking-widest">WELCOME BACK</p>
@@ -18,12 +17,10 @@ export default function App() {
           </div>
         </div>
 
-        {/* Simulate Login */}
         <button className="w-full border border-dashed border-zinc-700 rounded-2xl py-3 text-sm text-zinc-400 hover:text-white transition mb-8">
           → [Simulate Fresh Login]
         </button>
 
-        {/* Study Streak */}
         <div className="bg-zinc-900 rounded-3xl p-6 mb-6">
           <p className="uppercase text-xs tracking-widest text-zinc-400 mb-4">STUDY STREAK</p>
           <div className="flex items-end justify-between">
@@ -35,6 +32,34 @@ export default function App() {
           </div>
           <p className="text-sm text-zinc-400 mt-4">Keep the fire burning — 30 min today.</p>
         </div>
+
+        <div className="bg-zinc-900 rounded-3xl p-6 mb-8">
+          <div className="flex items-center gap-4">
+            <CalendarClock className="w-9 h-9 text-teal-400" />
+            <div>
+              <p className="text-sm text-zinc-400">NATIONAL EXAM COUNTDOWN</p>
+              <p className="text-5xl font-bold mt-1">135 <span className="text-2xl text-zinc-400">days left</span></p>
+            </div>
+          </div>
+        </div>
+
+        <p className="text-zinc-400 text-sm mb-4">Continue</p>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="bg-zinc-900 rounded-3xl p-6">
+            <BookOpen className="w-8 h-8 text-violet-400 mb-4" />
+            <p className="font-semibold">Resume Grade 12</p>
+            <p className="text-sm text-zinc-400 mt-1">Functions · Unit 3</p>
+          </div>
+          <div className="bg-zinc-900 rounded-3xl p-6">
+            <TrendingUp className="w-8 h-8 text-emerald-400 mb-4" />
+            <p className="font-semibold">Weak Topics</p>
+            <p className="text-sm text-zinc-400 mt-1">3 to review</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}        </div>
 
         {/* Countdown */}
         <div className="bg-zinc-900 rounded-3xl p-6 mb-8">
