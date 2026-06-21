@@ -59,9 +59,7 @@ export default function App() {
       </div>
     </div>
   )
-}        </div>
-
-        {/* Countdown */}
+}        {/* Countdown */}
         <div className="bg-zinc-900 rounded-3xl p-6 mb-8">
           <div className="flex items-center gap-4">
             <CalendarClock className="w-9 h-9 text-teal-400" />
