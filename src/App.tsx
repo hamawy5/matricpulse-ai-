@@ -59,6 +59,31 @@ export default function App() {
       </div>
     </div>
   )
+}          <div className="flex items-center gap-4">
+            <CalendarClock className="w-9 h-9 text-teal-400" />
+            <div>
+              <p className="text-sm text-zinc-400">NATIONAL EXAM COUNTDOWN</p>
+              <p className="text-5xl font-bold mt-1">135 <span className="text-2xl text-zinc-400">days left</span></p>
+            </div>
+          </div>
+        </div>
+
+        <p className="text-zinc-400 text-sm mb-4">Continue</p>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="bg-zinc-900 rounded-3xl p-6">
+            <BookOpen className="w-8 h-8 text-violet-400 mb-4" />
+            <p className="font-semibold">Resume Grade 12</p>
+            <p className="text-sm text-zinc-400 mt-1">Functions · Unit 3</p>
+          </div>
+          <div className="bg-zinc-900 rounded-3xl p-6">
+            <TrendingUp className="w-8 h-8 text-emerald-400 mb-4" />
+            <p className="font-semibold">Weak Topics</p>
+            <p className="text-sm text-zinc-400 mt-1">3 to review</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }        {/* Countdown */}
         <div className="bg-zinc-900 rounded-3xl p-6 mb-8">
           <div className="flex items-center gap-4">
